@@ -24,14 +24,10 @@ public class Render {
 					continue;
 				}
 				
-				//pixels[xPix+yPix*width] = render.pixels[x + y * render.width];
-				
 				int alpha = render.pixels[x + y * render.width];
 				if (alpha > 0 )
 					pixels [xPix + yPix * width] = alpha;
 			}
 		}
 	}
-	
-
 }
